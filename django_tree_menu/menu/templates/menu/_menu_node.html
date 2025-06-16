@@ -1,0 +1,12 @@
+{# Шаблон для одного узла меню (пункта) #}
+<li class="menu-item{% if node.is_active %} active{% endif %}">
+    <a href="{{ node.url }}">{{ node.title }}</a>
+    {# Если есть дочерние и узел раскрыт — рисуем подменю #}
+    {% if node.children and (node.is_open or node.is_active) %}
+        <ul class="submenu">
+            {% for node in node.children %}
+                {% include 'menu/_menu_node.html' with node=node %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+</li> 

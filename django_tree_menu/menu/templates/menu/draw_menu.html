@@ -1,0 +1,8 @@
+{% load menu_tags %}
+{# Корневой шаблон для отрисовки меню #}
+<ul class="menu-root">
+    {# Рекурсивно включаем узлы #}
+    {% for node in menu_root %}
+        {% include 'menu/_menu_node.html' with node=node %}
+    {% endfor %}
+</ul> 
