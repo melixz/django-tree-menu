@@ -17,7 +17,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "django_tree_menu",
+    "django_tree_menu.menu",
 ]
 
 MIDDLEWARE = [
@@ -30,7 +30,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "settings.urls"
+ROOT_URLCONF = "django_tree_menu.settings.urls"
 
 TEMPLATES = [
     {
@@ -47,7 +47,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "settings.wsgi.application"
+WSGI_APPLICATION = "django_tree_menu.settings.wsgi.application"
 
 
 DATABASES = {
