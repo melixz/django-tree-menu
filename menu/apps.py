@@ -7,5 +7,5 @@ class MenuConfig(AppConfig):
     """
 
     default_auto_field = "django.db.models.BigAutoField"
-    name = "django_tree_menu.menu"
+    name = "django-tree-menu.menu"
     verbose_name = "Древовидное меню"
